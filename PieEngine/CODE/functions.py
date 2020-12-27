@@ -5,8 +5,7 @@ def createWindow(height,width,colour):
     c = tk.Canvas(root,bg = colour,height = height,width = width)
     c.pack()
 def triangle(canvas,points,color):
-    fill=color
-    canvas.create_polygon(points)
+    canvas.create_polygon(points,fill=color)
 def pyramid(canvas,points1,points2):
-    triangle(canvas,points1,0)
-    triangle(canvas,points2,200)
+    triangle(canvas,points1,"#0d0d0c")
+    triangle(canvas,points2,"#1c1b17")
